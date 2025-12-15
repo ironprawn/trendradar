@@ -1649,7 +1649,7 @@ def render_html_content(
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>热点新闻分析</title>
+        <title>实时热点数据</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <style>
             * { box-sizing: border-box; }
@@ -1672,7 +1672,7 @@ def render_html_content(
             }
             
             .header {
-                background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                background: linear-gradient(135deg, #1A1A1A 0%, #1A1A1A 100%);
                 color: white;
                 padding: 32px 24px;
                 text-align: center;
@@ -2081,7 +2081,7 @@ def render_html_content(
                     <button class="save-btn" onclick="saveAsImage()">保存为图片</button>
                     <button class="save-btn" onclick="saveAsMultipleImages()">分段保存</button>
                 </div>
-                <div class="header-title">热点新闻分析</div>
+                <div class="header-title">实时热点数据</div>
                 <div class="header-info">
                     <div class="info-item">
                         <span class="info-label">报告类型</span>
@@ -2101,7 +2101,7 @@ def render_html_content(
     html += """</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">新闻总数</span>
+                        <span class="info-label">热点总数</span>
                         <span class="info-value">"""
 
     html += f"{total_titles} 条"
@@ -2112,7 +2112,7 @@ def render_html_content(
     html += """</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">热点新闻</span>
+                        <span class="info-label">筛选后热点总数</span>
                         <span class="info-value">"""
 
     html += f"{hot_news_count} 条"
